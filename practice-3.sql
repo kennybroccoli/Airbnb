@@ -12,4 +12,7 @@
 -- | Belmont Cragin         |
 -- | Beverly                |
 
-
+SELECT 
+	DISTINCT TRIM(neighborhood, '"') AS neighborhood
+FROM listings
+ORDER BY neighborhood ASC;
